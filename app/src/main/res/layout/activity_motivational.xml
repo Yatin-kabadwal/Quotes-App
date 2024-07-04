@@ -2,15 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/motiv"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="@drawable/loveheart"
     android:layout_height="match_parent"
     android:padding="32dp"
     android:paddingTop="32dp"
     android:paddingBottom="0dp"
-    tools:context=".Love">
-
+    tools:context=".MotivationalActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"

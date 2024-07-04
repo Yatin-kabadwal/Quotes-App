@@ -2,30 +2,30 @@ package com.example.quotes
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import android.widget.TextView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class Love : AppCompatActivity() {
-    private val loveQuotes = listOf(
-        "Love is composed of a single soul inhabiting two bodies. - Aristotle",
-        "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage. - Lao Tzu",
-        "We are shaped and fashioned by what we love. - Johann Wolfgang von Goethe",
-        "Love is when the other person's happiness is more important than your own. - H. Jackson Brown, Jr.",
-        "To love and be loved is to feel the sun from both sides. - David Viscott"
+class LifeActivity : AppCompatActivity() {
+    private val lifeQuotes = listOf(
+        "Life is what happens when you're busy making other plans. - John Lennon",
+        "The purpose of our lives is to be happy. - Dalai Lama",
+        "Life is really simple, but we insist on making it complicated. - Confucius",
+        "In the end, it's not the years in your life that count. It's the life in your years. - Abraham Lincoln",
+        "Live in the sunshine, swim the sea, drink the wild air. - Ralph Waldo Emerson"
     )
 
     private var currentIndex = 0
 
     private lateinit var quoteText: TextView
     private lateinit var quoteAuthor: TextView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_love)
-
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_life)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -51,7 +51,7 @@ class Love : AppCompatActivity() {
     }
 
     private fun showQuote() {
-        val quoteParts = loveQuotes[currentIndex].split(" - ")
+        val quoteParts = lifeQuotes[currentIndex].split(" - ")
         quoteText.text = quoteParts[0]
         quoteAuthor.text = quoteParts[1]
     }
@@ -64,14 +64,14 @@ class Love : AppCompatActivity() {
     }
 
     private fun showNextQuote() {
-        if (currentIndex < loveQuotes.size - 1) {
+        if (currentIndex < lifeQuotes.size - 1) {
             currentIndex++
             showQuote()
         }
     }
 
     private fun shareQuote() {
-        val currentQuote = loveQuotes[currentIndex]
+        val currentQuote = lifeQuotes[currentIndex]
         val shareIntent = Intent().apply {
             action = Intent.ACTION_SEND
             putExtra(Intent.EXTRA_TEXT, currentQuote)
@@ -80,3 +80,4 @@ class Love : AppCompatActivity() {
         startActivity(Intent.createChooser(shareIntent, null))
     }
 }
+

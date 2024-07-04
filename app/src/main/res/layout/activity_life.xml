@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="@drawable/loveheart"
     android:layout_height="match_parent"
+    android:background="@drawable/lifeback"
     android:padding="32dp"
     android:paddingTop="32dp"
     android:paddingBottom="0dp"
-    tools:context=".Love">
-
+    tools:context=".LifeActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
