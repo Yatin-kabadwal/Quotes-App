@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="@drawable/space"
     android:layout_height="match_parent"
+    android:background="@drawable/space"
     android:padding="32dp"
     android:paddingTop="32dp"
     android:paddingBottom="0dp"
     tools:context=".FamousActivity">
-
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -90,8 +89,6 @@
             android:textAlignment="textEnd"
             android:textColor="#80FFFFFF"
             android:textSize="18sp" />
-
-
 
     </LinearLayout>
 
