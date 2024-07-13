@@ -16,3 +16,7 @@ and get inspired by new quotes every time they click a button. The app is design
 ## Technologies Used
 - Kotlin: Programming language used for development.
 - Android Studio: IDE used for developing the application.
+
+## Screenshots
+
+![Whimg](https://github.com/user-attachments/assets/07befed2-7d3d-4848-bfb6-5e5924431350)
