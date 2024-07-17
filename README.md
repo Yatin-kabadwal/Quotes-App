@@ -19,6 +19,6 @@ and get inspired by new quotes every time they click a button. The app is design
 
 ## Screenshots
 
-![Whimg8](https://github.com/user-attachments/assets/be90f5b5-4424-4893-b728-67d0a3cc8a61)
-![Wb9b21](https://github.com/user-attachments/assets/89cc1fe6-346f-48bb-8310-396e7e3552ee)
+<img src="https://github.com/user-attachments/assets/be90f5b5-4424-4893-b728-67d0a3cc8a61" alt="Image 1" width="200"/>
 
+<img src="https://github.com/user-attachments/assets/89cc1fe6-346f-48bb-8310-396e7e3552ee" alt="Image 2" width="200"/>
